@@ -3,140 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human English</title>
-
-   
+    <title>Human English | Liderazgo Psicológico en el Aprendizaje de Idiomas</title>
+    <meta name="description" content="Aprende inglés con un enfoque humanista liderado por psicólogos profesionales en Human English.">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6242621975899073" crossorigin="anonymous"></script>
 
     <style>
+        :root {
+            --verde-oscuro: #062b0f;
+            --verde-claro: #0c4d1f;
+            --fondo: #f5f5f5;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
-            background: #f5f5f5;
+            background: var(--fondo);
             color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background: #062b0f;
-            padding: 20px;
+            background: var(--verde-oscuro);
+            padding: 15px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .banner-container {
+            width: 100%;
+            background: #fff;
             text-align: center;
         }
 
-        header img {
-            max-width: 250px;
-        }
-
         .banner {
-            width: 100%;
-            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         h1 {
             text-align: center;
-            color: #0c4d1f; /* MISMO COLOR QUE h2 */
+            color: var(--verde-claro);
             margin-top: 30px;
-            font-size: 60px; /* AUMENTAMOS EL TAMAÑO */
-            font-weight: bold;
+            font-size: 2.5rem;
+            padding: 0 20px;
         }
 
         .section {
             padding: 40px;
             max-width: 900px;
-            margin: auto;
+            margin: 20px auto;
             background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             border-radius: 10px;
         }
 
         .section h2 {
-            text-align: center;
-            color: #0c4d1f;
+            color: var(--verde-claro);
+            border-bottom: 2px solid var(--verde-claro);
+            padding-bottom: 10px;
         }
-        
+
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .servicio-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid var(--verde-claro);
+        }
+
         .info-contacto {
             text-align: center;
-            color: #0c4d1f; /* mismo color */
-            font-size: 32px; /* mismo tamaño que h2 */
-            margin-top: 30px;
+            color: var(--verde-claro);
+            font-size: 24px;
+            margin: 40px 0;
+            padding: 20px;
+            background: #e8f5e9;
         }
 
         .images {
             text-align: center;
-            margin-top: 30px;
         }
 
         .images img {
-            width: 45%;
+            width: 30%;
+            min-width: 250px;
             margin: 10px;
             border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+
+        .ad-container {
+            max-width: 900px;
+            margin: 30px auto;
+            text-align: center;
+            overflow: hidden;
         }
 
         footer {
-            background: #062b0f;
+            background: var(--verde-oscuro);
             color: white;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 30px 20px;
             text-align: center;
-            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
 
-    <img class="banner" src="imagenes/isotipo en banner.png" alt="Banner de Human English">
+    <header>
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#nosotros">NOSOTROS</a>
+            <a href="#metodologia">METODOLOGÍA</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+    </header>
 
-    
-
-    <div class="section">
-        <h1>Human English</h1>
-        
-        <p>
-            Human English es una organizacion en la que el director y los coordinadores son 
-            psicólogos profesionales. Esta característica convierte nuestro enfoque en un modelo 
-            centrado en la comprensión del ser humano, la empatía y la formación integral.
-        </p>
-
-        <p>
-            Nuestros docentes no trabajan solos: son guiados y acompañados directamente por los 
-            psicólogos que lideran la institución. Ellos imparten pautas basadas en el conocimiento 
-            humano para garantizar:
-        </p>
-
-        <ul>
-            <li>Un trato cálido y respetuoso hacia cada estudiante.</li>
-            <li>Una comunicación positiva con sus familias.</li>
-            <li>Un ambiente de aprendizaje emocionalmente seguro.</li>
-            <li>Metodologías humanizadas para el desarrollo académico.</li>
-        </ul>
-
-        <p>
-            En Human English, el aprendizaje del idioma está profundamente conectado con el bienestar 
-            emocional, el respeto y el crecimiento personal.
-        </p>
+    <div class="banner-container">
+        <img class="banner" src="imagenes/isotipo en banner.png" alt="Human English - Liderazgo Psicológico">
     </div>
 
-    <div class="section images">
-        <h2>Nuestro equipo y estudiantes</h2>
+    <main>
+        <section id="nosotros" class="section">
+            <h1>Human English: Formación con Sentido Humano</h1>
+            <p>
+                En <strong>Human English</strong>, entendemos que aprender un segundo idioma no es solo un proceso cognitivo, sino emocional. Somos una organización liderada por <strong>psicólogos profesionales</strong>, lo que nos permite ofrecer un modelo educativo único en el mercado.
+            </p>
+            <p>
+                Nuestra dirección estratégica utiliza herramientas de la psicología educativa para crear un entorno donde el estudiante se siente seguro, motivado y valorado. No solo enseñamos gramática; construimos puentes de comunicación basados en la confianza.
+            </p>
+        </section>
 
-        <img src="imagenes/Gemini_Generated_Image_731vtu731vtu731v.png" alt="Docente guiando estudiante">
-        <img src="imagenes/leo esponiendo el lapbook.png" alt="Estudiante exponiendo un lapbook">
-        <img src="imagenes/WhatsApp Image 2025-11-07 at 11.16.51 AM.jpeg" alt="Proyecto de veterinaria">
-    </div>
+        <section id="metodologia" class="section">
+            <h2>Nuestra Metodología Integral</h2>
+            <div class="grid-servicios">
+                <div class="servicio-card">
+                    <h3>Acompañamiento Psicológico</h3>
+                    <p>Docentes guiados por psicólogos para manejar la frustración y potenciar el aprendizaje positivo.</p>
+                </div>
+                <div class="servicio-card">
+                    <h3>Ambiente Seguro</h3>
+                    <p>Espacios libres de juicios donde el error se ve como una oportunidad de crecimiento personal.</p>
+                </div>
+                <div class="servicio-card">
+                    <h3>Comunicación Empática</h3>
+                    <p>Mantenemos un vínculo constante y positivo con las familias de nuestros estudiantes.</p>
+                </div>
+            </div>
+        </section>
 
-    <h2 class="info-contacto">Pregunta por información al 3134996753</h2>
+        <section class="section images">
+            <h2>Experiencias de Nuestro Equipo</h2>
+            <img src="imagenes/Gemini_Generated_Image_731vtu731vtu731v.png" alt="Docente guiando estudiante en Human English">
+            <img src="imagenes/leo esponiendo el lapbook.png" alt="Estudiante exponiendo un lapbook creativo">
+            <img src="imagenes/WhatsApp Image 2025-11-07 at 11.16.51 AM.jpeg" alt="Proyecto pedagógico de veterinaria">
+        </section>
 
-<ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-6242621975899073"
-        data-ad-slot="2330189403"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+        <div id="contacto" class="info-contacto">
+            ¿Deseas transformar tu aprendizaje? <br>
+            <strong>Pregunta por información al 3134996753</strong>
+        </div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6242621975899073"
+                 data-ad-slot="2330189403"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
 
     <footer>
-        Human English © 2025 — Formación humana para un aprendizaje real.
+        <p>Human English © 2025 — Formación humana para un aprendizaje real.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos de Servicio</a> | 
+            <a href="#">Política de Cookies</a>
+        </div>
+        <p style="font-size: 10px; color: #888; margin-top: 10px;">Director y Coordinadores: Psicólogos Profesionales al servicio de la educación.</p>
     </footer>
 
 </body>
