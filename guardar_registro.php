@@ -15,16 +15,15 @@ if ($mysqli->connect_error) {
 
 // Capturar datos del formulario
 $nombre = $mysqli->real_escape_string($_POST['nombre'] ?? '');
-$email = $mysqli->real_escape_string($_POST['email'] ?? '');
 $celular = $mysqli->real_escape_string($_POST['celular'] ?? '');
 
-if (empty($nombre) || empty($email) || empty($celular)) {
+if (empty($nombre) || empty($celular)) {
     echo '<p>Por favor completa todos los campos requeridos.</p>';
     exit;
 }
 
 // Insertar registro en tabla
-$sql = "INSERT INTO registros (nombre, email, celular, fecha_registro) VALUES ('{$nombre}', '{$email}', '{$celular}', NOW())";
+$sql = "INSERT INTO registros (nombre, celular, fecha_registro) VALUES ('{$nombre}', '{$celular}', NOW())";
 
 if ($mysqli->query($sql) === TRUE) {
     echo '<h2>Registro exitoso</h2>';
