@@ -145,7 +145,6 @@
             <a href="#">INICIO</a>
             <a href="nosotros.html">NOSOTROS</a>
             <a href="#metodologia">METODOLOGÍA</a>
-            <a href="registrate_y_agendatuclase.html">CONTACTO</a>
         </nav>
     </header>
 
@@ -189,10 +188,20 @@
             <img src="imagenes/Gemini_Generated_Image_53rf5f53rf5f53rf.png" alt="Proyecto pedagógico de veterinaria">
         </section>
 
-        <div id="contacto" class="info-contacto">
-            ¿Deseas transformar tu aprendizaje? <br>
-            <strong>Pregunta por información al 3134996753</strong>
-        </div>
+        <section class="section">
+            <form action="guardar_registro.php" method="post" style="max-width: 600px; margin: 0 auto;">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #ccc; border-radius:4px;">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #ccc; border-radius:4px;">
+
+                <label for="celular">Número de Celular:</label>
+                <input type="tel" id="celular" name="celular" required style="width:100%; padding:8px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;">
+
+                <button type="submit" style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:4px; cursor:pointer;">Enviar Registro</button>
+            </form>
+        </section>
 
         <div class="ad-container">
             <ins class="adsbygoogle"
