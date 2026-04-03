@@ -35,3 +35,11 @@ if ($mysqli->query($sql) === TRUE) {
 
 $mysqli->close();
 ?>
+
+<form action="/guardar_registro.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required>
+    <label for="celular">Celular:</label>
+    <input type="text" name="celular" id="celular" required>
+    <button type="submit">Guardar</button>
+</form>
